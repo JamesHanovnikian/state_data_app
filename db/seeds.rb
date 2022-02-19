@@ -22,13 +22,13 @@
 
 # look up
 
-locations = Location.all
-locations.each do |location|
-  abbrev = Abbreviation.find_by(state: location.state)
-  abbreviation_code = abbrev.code
-  location.abbreviation = abbreviation_code
-  location.save
-end
+# locations = Location.all
+# locations.each do |location|
+#   abbrev = Abbreviation.find_by(state: location.state)
+#   abbreviation_code = abbrev.code
+#   location.abbreviation = abbreviation_code
+#   location.save
+# end
 
 # Abbreviation.create!([
 #   { state: "Alabama", abbrev: "Ala.", code: "AL" },

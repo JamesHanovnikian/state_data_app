@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
   end
 
   def show
-    location = Location.find_by(abbreviation: params[:abbreviation])
-    render json = location.as_json
+    location = Location.find_by(abbreviation: params[:state_abbreviations])
+    render json: location.as_json
   end
 end
